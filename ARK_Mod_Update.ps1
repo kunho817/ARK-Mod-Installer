@@ -1,9 +1,16 @@
+# Location of the steamcmd.exe file used to download mods.
 $steamcmd = "D:\ARK Server\SteamCMD\"
+# General login used for the steam sever which does not require a specified login and password.
 $steamlogin = "+login anonymous anonymous"
+# Location where the game server needs to have the mods installed to.
 $arkmods = "D:\ARK Server\SteamCMD\steamapps\common\ARK Survival Evolved Dedicated Server\ShooterGame\Content\Mods\"
+# Location where steamcmd.exe download the mods.
 $steammods = "D:\ARK Server\SteamCMD\steamapps\workshop\content\346110"
+# The app ID for the game, not the server.
 $gameid = "346110"
+# Master list of the mods to download/update.
 $modlist = 479884434,487516323,533828549,536214294,520879363,530745564,536247310,489596581,526337556,519546805,520373758,503911420,531713045,539557361,502961364,566885854,566887000,497432858,523857855,512609530,527251743,546298720,507355109,519998112,543828831
+# ============================================================================================
 & "D:\ARK Server\SteamCMD\steamcmd.exe" $steamlogin +workshop_download_item $gameid 479884434 # 01 Slow Stuff Decay
 #& $steamcmd +workshop_download_item $gameid 487516323 # 01 Au Natural
 #& $steamcmd +workshop_download_item $gameid 533828549 # 02 No Collision Check v1.2
